@@ -1,9 +1,11 @@
 // ==UserScript==
-// @name         Blaseball
+// @name         Widescreen Blaseball
 // @namespace    http://tampermonkey.net/
 // @version      0.2
-// @description  Widescreen blaseball layout
+// @description  Widescreen Blaseball layout
 // @author       Edgarware
+// @updateURL    https://raw.githubusercontent.com/edgarware/widescreen-blaseball/master/widescreen_blaseball.user.js
+// @downloadURL  https://raw.githubusercontent.com/edgarware/widescreen-blaseball/master/widescreen_blaseball.user.js
 // @match        https://blaseball.com/*
 // @match        https://www.blaseball.com/*
 // @grant        none
