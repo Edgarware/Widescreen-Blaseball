@@ -8,16 +8,15 @@
 // @match        https://www.blaseball.com/*
 // @grant        none
 // ==/UserScript==
-// Based on UserScript from Fugi
+// Based on UserScript from Fugi: https://gist.github.com/Fugiman/1cbe3b776bb9603298fc4258495af09a
 
 
 /* THE COMMISSIONER IS DOING A GREAT JOB */
 
 /*
  TODO:
- 	About page doesn't resize right
-    
-  Main display doesnt resize right
+ 	* About page doesn't resize right
+  	* Main display doesnt resize right
   	
 */
 (function() {
@@ -31,11 +30,11 @@
 }
 
 .Main-Body > div > div > ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 950px);
-  grid-gap: 20px;
-  justify-content: center;
-  margin-bottom: 20px;
+ 	display: grid;
+ 	grid-template-columns: repeat(auto-fit, 950px);
+ 	grid-gap: 20px;
+	justify-content: center;
+	margin-bottom: 20px;
 }
 
 
@@ -48,11 +47,11 @@
 }
 
 .Shop-Grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 300px);
-  grid-gap: 20px;
-  justify-content: center;
-  margin-bottom: 20px;
+  	display: grid;
+  	grid-template-columns: repeat(auto-fit, 300px);
+  	grid-gap: 20px;
+  	justify-content: center;
+  	margin-bottom: 20px;
 }
 
 .Shop-Item {
@@ -60,14 +59,14 @@
 }
 
 .Decrees-Container {
-  grid-template-columns: repeat(auto-fill, 300px);
-  justify-content: center;
+  	grid-template-columns: repeat(auto-fill, 300px);
+  	justify-content: center;
 	width: 100%;
 }
 
 .Blessings-Container {
-  grid-template-columns: repeat(auto-fill, 250px);
-  justify-content: center;
+  	grid-template-columns: repeat(auto-fill, 250px);
+  	justify-content: center;
 	width: 100%;
 }
 
