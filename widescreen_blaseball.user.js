@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Widescreen Blaseball
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.3
 // @description  Widescreen Blaseball layout
 // @author       Edgarware
 // @updateURL    https://raw.githubusercontent.com/edgarware/widescreen-blaseball/master/widescreen_blaseball.user.js
@@ -27,21 +27,45 @@
     const s = document.createElement('style');
     s.innerHTML = `
 .Main {
-	padding-right: 40px;
-	padding-left: 40px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.Navigation {
+	padding-right: 100px;
+	padding-left: 100px;
+}
+
+.Navigation-Era{
+	padding-left: 100px !important;
+}
+
+.Navigation-SubEra{
+	padding-left: 100px !important;
 }
 
 .Main-Body > div > div > ul {
  	display: grid;
- 	grid-template-columns: repeat(auto-fit, 950px);
+ 	grid-template-columns: repeat(auto-fit, 49%);
  	grid-gap: 20px;
 	justify-content: center;
 	margin-bottom: 20px;
 }
 
+.Main-Body > div > div > div > ul > ul {
+ 	display: grid;
+ 	grid-template-columns: repeat(auto-fit, 49%);
+ 	grid-gap: 20px;
+	justify-content: center;
+	margin-bottom: 20px;
+}
 
 .GameWidget {
 	margin-bottom: 0;
+}
+
+.GameWidget-Full-Live {
+	//grid-template-columns: 1fr 308px 307px;
 }
 
 .Shop {
@@ -60,10 +84,20 @@
 	width: 100%;
 }
 
+.Decrees {
+	padding-right: 100px;
+	padding-left: 100px;
+}
+
 .Decrees-Container {
   	grid-template-columns: repeat(auto-fill, 300px);
   	justify-content: center;
 	width: 100%;
+}
+
+.Blessings {
+	padding-right: 100px;
+	padding-left: 100px;
 }
 
 .Blessings-Container {
