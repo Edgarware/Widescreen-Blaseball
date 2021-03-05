@@ -44,15 +44,15 @@
 	padding-left: 100px !important;
 }
 
-.Main-Body > div > div > ul {
- 	display: grid;
- 	grid-template-columns: repeat(auto-fit, 49%);
- 	grid-gap: 20px;
-	justify-content: center;
-	margin-bottom: 20px;
-}
+//.Main-Body > div > div > ul {
+// 	display: grid;
+// 	grid-template-columns: repeat(auto-fit, 49%);
+// 	grid-gap: 20px;
+//	justify-content: center;
+//	margin-bottom: 20px;
+//}
 
-.Main-Body > div > div > div > ul > ul {
+.Main-Body > div > div > ul > ul {
  	display: grid;
  	grid-template-columns: repeat(auto-fit, 49%);
  	grid-gap: 20px;
@@ -68,30 +68,14 @@
 	//grid-template-columns: 1fr 308px 307px;
 }
 
-.Shop {
-	max-width: 100%;
-}
-
-.Shop-Grid {
-  	display: grid;
-  	grid-template-columns: repeat(auto-fit, 300px);
-  	grid-gap: 20px;
-  	justify-content: center;
-  	margin-bottom: 20px;
-}
-
-.Shop-Item {
-	width: 100%;
-}
-
 .Decrees {
 	padding-right: 100px;
 	padding-left: 100px;
 }
 
 .Decrees-Container {
-  	grid-template-columns: repeat(auto-fill, 300px);
-  	justify-content: center;
+  grid-template-columns: repeat(auto-fill, 300px);
+  justify-content: center;
 	width: 100%;
 }
 
@@ -101,9 +85,30 @@
 }
 
 .Blessings-Container {
-  	grid-template-columns: repeat(auto-fill, 250px);
-  	justify-content: center;
+  grid-template-columns: repeat(auto-fill, 250px);
+  justify-content: center;
 	width: 100%;
+}
+
+.Wills {
+	padding-right: 100px;
+	padding-left: 100px;
+}
+
+.Wills-Container {
+  grid-template-columns: repeat(auto-fill, 250px);
+  justify-content: center;
+	width: 100%;
+}
+
+.Bulletin {
+	padding-right: 100px;
+	padding-left: 100px;
+}
+
+.Standings-League {
+	padding-right: 15%;
+	padding-left: 15%;
 }
 
 .About-All {
