@@ -44,15 +44,7 @@
 	padding-left: 100px !important;
 }
 
-//.Main-Body > div > div > ul {
-// 	display: grid;
-// 	grid-template-columns: repeat(auto-fit, 49%);
-// 	grid-gap: 20px;
-//	justify-content: center;
-//	margin-bottom: 20px;
-//}
-
-.Main-Body > div > div > ul > ul {
+.Main-Body > div > ul {
  	display: grid;
  	grid-template-columns: repeat(auto-fit, 49%);
  	grid-gap: 20px;
@@ -133,6 +125,10 @@
 
 .TheBook-All {
 	max-width: 1024px;
+}
+
+.Leaderboard-Player-Container {
+	display: flex !important;
 }
 `
     document.body.appendChild(s);
