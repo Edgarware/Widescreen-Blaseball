@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Widescreen Blaseball
 // @namespace    http://tampermonkey.net/
-// @version      0.4
+// @version      0.5
 // @description  Widescreen Blaseball layout
 // @author       Edgarware
 // @updateURL    https://raw.githubusercontent.com/edgarware/widescreen-blaseball/master/widescreen_blaseball.user.js
@@ -36,12 +36,9 @@
 	padding-left: 100px;
 }
 
-.Navigation-Era{
-	padding-left: 100px !important;
-}
-
-.Navigation-SubEra{
-	padding-left: 100px !important;
+.Header{
+	padding-left: 100px;
+	padding-right: 100px;
 }
 
 .Main-Body > div > ul {
@@ -51,6 +48,15 @@
 	justify-content: center;
 	margin-bottom: 20px;
 }
+
+.Main-Body > div > div > ul > ul{
+ 	display: grid;
+ 	grid-template-columns: repeat(auto-fit, 49%);
+ 	grid-gap: 20px;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
 
 .GameWidget {
 	margin-bottom: 0;
@@ -129,6 +135,12 @@
 
 .Leaderboard-Player-Container {
 	display: flex !important;
+}
+
+.Events-ButtonList-Home {
+	justify-content: flex-end;
+	margin: 0;
+	width: 70%;
 }
 `
     document.body.appendChild(s);
