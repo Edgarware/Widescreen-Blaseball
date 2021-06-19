@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Widescreen Blaseball
 // @namespace    http://tampermonkey.net/
-// @version      0.5
+// @version      0.6
 // @description  Widescreen Blaseball layout
 // @author       Edgarware
 // @updateURL    https://raw.githubusercontent.com/edgarware/widescreen-blaseball/master/widescreen_blaseball.user.js
@@ -57,13 +57,13 @@
 	margin-bottom: 20px;
 }
 
-
 .GameWidget {
-	margin-bottom: 0;
+	margin-bottom: 0 !important;
 }
 
-.GameWidget-Full-Live {
-	//grid-template-columns: 1fr 308px 307px;
+.PlayoffSetup-Header {
+	grid-column-start: 1;
+	grid-column-end: 3;
 }
 
 .Decrees {
