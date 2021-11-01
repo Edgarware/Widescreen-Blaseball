@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Widescreen Blaseball
 // @namespace    http://tampermonkey.net/
-// @version      0.6
+// @version      0.7
 // @description  Widescreen Blaseball layout
 // @author       Edgarware
 // @updateURL    https://raw.githubusercontent.com/edgarware/widescreen-blaseball/master/widescreen_blaseball.user.js
@@ -41,6 +41,14 @@
 	padding-right: 100px;
 }
 
+.Main-Body > ul {
+ 	display: grid;
+ 	grid-template-columns: repeat(auto-fit, 49%);
+ 	grid-gap: 20px;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
 .Main-Body > div > ul {
  	display: grid;
  	grid-template-columns: repeat(auto-fit, 49%);
@@ -61,14 +69,42 @@
 	margin-bottom: 0 !important;
 }
 
+.Bet{
+	padding-left: 300px;
+	padding-right: 300px;
+}
+
+.Bet-Schedule-Date{
+	width: 500px;
+}
+
+.Bet-Schedule{
+	width: 800px;
+}
+
+.League-Schedule-Wrapper{
+	width: 100%;
+}
+
+.League-Schedule{
+	width: 100%;
+}
+
+.Main-Body > .League-Schedule-Scroll-Wrapper{
+	padding-right: 200px;
+	padding-left: 200px;
+	justify-content: center;
+	align-items: center;
+}
+
 .PlayoffSetup-Header {
 	grid-column-start: 1;
 	grid-column-end: 3;
 }
 
 .Decrees {
-	padding-right: 100px;
-	padding-left: 100px;
+	padding-right: 200px;
+	padding-left: 200px;
 }
 
 .Decrees-Container {
@@ -78,8 +114,8 @@
 }
 
 .Blessings {
-	padding-right: 100px;
-	padding-left: 100px;
+	padding-right: 200px;
+	padding-left: 200px;
 }
 
 .Blessings-Container {
@@ -89,8 +125,8 @@
 }
 
 .Wills {
-	padding-right: 100px;
-	padding-left: 100px;
+	padding-right: 200px;
+	padding-left: 200px;
 }
 
 .Wills-Container {
@@ -100,8 +136,13 @@
 }
 
 .Bulletin {
-	padding-right: 100px;
-	padding-left: 100px;
+	padding-right: 200px;
+	padding-left: 200px;
+}
+
+.LeagueFeed {
+	padding-right: 300px;
+	padding-left: 300px;
 }
 
 .Standings-League {
